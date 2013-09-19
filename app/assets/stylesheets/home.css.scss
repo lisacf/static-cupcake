@@ -12,11 +12,16 @@
  }
  .wording {
  	margin: 0 auto 53px;
- 	width: 93.75%;
+ 	width: 93.5%;
  }
+
  img {
  	max-width: 100%;
  }
+ .image {
+ 		margin:0 auto;
+ 		width:90%;
+ 	}
 
  h1 {
  	text-align: center;
@@ -33,4 +38,38 @@ h2{
  h3 {
  	text-align: center;
  	color: #fffb00;
+ }
+
+ #footer {
+  position: fixed;
+  left:0px;
+  bottom:0px;
+  height:1.5em;
+  width:100%;
+  margin-top: 5em;
+  padding-top: 0.5em;
+  border-top: 1px inset #ff85ff;
+  color: #fff;
+  background: #663fbc;
+  z-index: 100;
+  }
+  .by {
+  	font-weight:normal;
+		text-align: center;
+  }
+/* IE 6 */
+* html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+ @media all and (min-width: 768px) {
+ 	.image {
+ 		margin:0 auto;
+ 		width:45%;
+ 	}
+ 	.by {
+ 		margin-left:1em;
+		float:left;
+  }
  }
