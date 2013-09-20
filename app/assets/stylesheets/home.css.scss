@@ -16,12 +16,9 @@
  }
 
  img {
- 	max-width: 100%;
+ 	min-width: 100%;
  }
- .image {
- 		margin:0 auto;
- 		width:90%;
- 	}
+
 
  h1 {
  	text-align: center;
@@ -63,13 +60,13 @@ h2{
    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 }
 
- @media all and (min-width: 768px) {
- 	.image {
- 		margin:0 auto;
- 		width:45%;
- 	}
+ @media screen and (min-width: 768px) {
  	.by {
  		margin-left:1em;
 		float:left;
+  }
+  .image {
+    margin:0 auto;
+    width:40%;
   }
  }

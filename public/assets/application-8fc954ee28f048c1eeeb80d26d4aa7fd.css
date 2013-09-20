@@ -1,0 +1,75 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+body {
+  background-color: #9437ff;
+  font: normal 100% Arial, sans-serif; }
+
+#page {
+  margin: 36px auto;
+  width: 90%; }
+
+.wording {
+  margin: 0 auto 53px;
+  width: 93.5%; }
+
+img {
+  min-width: 100%; }
+
+h1 {
+  text-align: center;
+  color: #ff85ff;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  font: bold 2.5em Calibri, Optima, Arial, sans-serif;
+  text-shadow: 1px 1px #bbbbbb, 2px 2px #666666, 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.5); }
+
+h2 {
+  text-align: center;
+  color: #ff85ff; }
+
+h3 {
+  text-align: center;
+  color: #fffb00; }
+
+#footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 1.5em;
+  width: 100%;
+  margin-top: 5em;
+  padding-top: 0.5em;
+  border-top: 1px inset #ff85ff;
+  color: #fff;
+  background: #663fbc;
+  z-index: 100; }
+
+.by {
+  font-weight: normal;
+  text-align: center; }
+
+/* IE 6 */
+* html #footer {
+  position: absolute;
+  top: expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px'); }
+
+@media screen and (min-width: 768px) {
+  .by {
+    margin-left: 1em;
+    float: left; }
+
+  .image {
+    margin: 0 auto;
+    width: 40%; } }
