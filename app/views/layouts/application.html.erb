@@ -9,6 +9,9 @@
   <%= favicon_link_tag 'cupcakelcfdraw.png' %>
 </head>
 <body>
+<% flash.each do |key, msg| %>
+	<%= content_tag 'div', msg, class: key %>
+<% end %>
 
 <%= yield %>
 

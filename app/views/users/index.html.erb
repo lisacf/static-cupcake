@@ -1,0 +1,8 @@
+<% if user_signed_in? %>
+	<div class="signin">Signed in as <%= current_user.name %>|<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>| <%= link_to 'Edit profile', edit_user_registration_path %> </div>
+<% else %>
+	<%= link_to image_tag(image_url("twitter_32.png")), user_omniauth_authorize_path(:twitter), class: "signin" %> 
+	<%= link_to image_tag(image_url("facebook_64.png")), user_omniauth_authorize_path(:facebook), class: "signin" %>
+	<%= link_to "Sign up", new_user_registration_path %> | 
+	<%= link_to "Sign in", new_user_session_path %>
+<% end %>

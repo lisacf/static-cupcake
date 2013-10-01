@@ -1,5 +1,6 @@
 Staticpage::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  ENV.update YAML.load(File.read(File.expand_path("../../application.yml", __FILE__)))
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
@@ -26,4 +27,6 @@ Staticpage::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+  #from devise
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
