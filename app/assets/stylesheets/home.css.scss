@@ -3,12 +3,28 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
  body {
- 	background-color:#9437ff;
+ 	background-color:#2f0078;//#9437ff;
  	font: normal 100% Arial, sans-serif;
  }
  #page {
  	margin: 36px auto;
  	width: 90%;
+  h1 {
+  text-align: center;
+  color: #ff85ff;
+  letter-spacing: 0.1em;
+  font-weight:bold;
+  font: bold 2.5em Calibri, Optima, Arial, sans-serif;
+  text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+   }
+   h2{
+    text-align: center;
+    color: #ddd ;//#ff85ff
+   }
+   h3 {
+    text-align: center;
+    color: #fffb00;
+   }
  }
  .wording {
  	margin: 0 auto 53px;
@@ -17,24 +33,6 @@
 
  img {
  	min-width: 100%;
- }
-
-
- h1 {
- 	text-align: center;
- 	color: #ff85ff;
- 	letter-spacing: 0.1em;
- 	font-weight:bold;
- 	font: bold 2.5em Calibri, Optima, Arial, sans-serif;
- 	text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
- }
-h2{
- 	text-align: center;
- 	color: #ff85ff;
- }
- h3 {
- 	text-align: center;
- 	color: #fffb00;
  }
 
  #footer {

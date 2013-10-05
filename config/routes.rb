@@ -2,7 +2,7 @@ Staticpage::Application.routes.draw do
   devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks"}
   resources :users
 
-  root to: "users#index"
+  root to: "home#index"
   match '/auth/:provider/callback', to: 'sessions#create', via: 'get'
   match '/auth/failure', to: redirect('/signin'), via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
