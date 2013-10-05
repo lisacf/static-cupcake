@@ -50,6 +50,3 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'omniauth-twitter'
-gem 'omniauth-facebook'
-gem 'devise'
